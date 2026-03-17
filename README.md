@@ -1,10 +1,25 @@
-# Networking Module
+# 🌐 Networking Module
 
-This module manages the creation of VPCs and Subnets, allowing for the creation of both private and public subnets.
+[![Published on Terraform Registry](https://img.shields.io/badge/Published%20on-Terraform%20Registry-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)](https://registry.terraform.io/modules/cibofdevs/networking/aws/latest)
 
-Example usage:
+Terraform module for managing **VPC** and **Subnet** infrastructure on AWS.  
+Supports flexible configuration for both **public** and **private subnets**.
 
-```
+---
+
+## 🚀 Features
+
+- Create VPC with custom CIDR block
+- Support multiple subnets
+- Public & private subnet configuration
+- Availability Zone distribution
+- Simple and reusable structure
+
+---
+
+## 📦 Usage
+
+```hcl
 module "vpc" {
   source = "./modules/networking"
 
