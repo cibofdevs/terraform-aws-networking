@@ -20,12 +20,13 @@ Supports flexible configuration for both **public** and **private subnets**.
 ## 📦 Usage
 
 ```hcl
-module "vpc" {
-  source = "./modules/networking"
+module "networking" {
+  source  = "cibofdevs/networking/aws"
+  version = "0.1.1"
 
   vpc_config = {
     cidr_block = "10.0.0.0/16"
-    name       = "your_vpc"
+    name       = "your_vpc_name"
   }
 
   subnet_config = {
